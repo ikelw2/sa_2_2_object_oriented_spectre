@@ -11,15 +11,15 @@ class Program
     static void Main(string[] args)
     {
         // Console rich text formatting, panels
-        AnsiConsole.Write(new Panel("[gray]Object Oriented Programming Demonstration[/]").BorderColor(Color.MediumVioletRed));
+        AnsiConsole.Write(new Panel("[gray]Object Oriented Programming Demonstration, with basic Spectre UI[/]").BorderColor(Color.MediumVioletRed));
 
         // Assignment 2.2.1
-        AnsiConsole.MarkupLine("\n\n[bold magenta]Assignment 2.2.1[/]");
+        AnsiConsole.MarkupLine("\n[bold magenta]Assignment 2.2.1[/]");
         EuroNoParkingSign strangeNewSign = new EuroNoParkingSign();
         strangeNewSign.InstructHumanDriver();
 
         // Assignment 2.2.2
-        AnsiConsole.MarkupLine("\n\n[bold magenta]Assignment 2.2.2[/]");
+        AnsiConsole.MarkupLine("\n[bold magenta]Assignment 2.2.2[/]");
         //Maths myMathInstance = new Maths(); // didn't like that this was not null????
         int a = 3;
         int b = 3;
@@ -30,7 +30,7 @@ class Program
         AnsiConsole.MarkupLine($"{a} * {b}         = "   + Maths.Multiply(a, b)                        + "       [Turquoise4]// demo of Multiply (2 params decimals)[/] ");
 
         // Assignment 2.2.3
-        AnsiConsole.MarkupLine("\n\n[bold magenta]Assignment 2.2.3[/]");
+        AnsiConsole.MarkupLine("\n[bold magenta]Assignment 2.2.3[/]");
         Circle myCircle = new Circle();
         myCircle.Radius = 3.0;
         Console.WriteLine($"A circle with radius {myCircle.Radius} has an area of {myCircle.CalculateArea():F1}.");
@@ -39,7 +39,8 @@ class Program
         mySquare.CalculateArea();
         Console.WriteLine($"A square with length {mySquare.Length} has an area of {mySquare.CalculateArea():F1}.");
 
-        Console.WriteLine("\n-----------------");
+        Console.WriteLine("\n------------------------------------------\nEnd of program. Press enter to continue.");
+        Console.ReadLine();
     }
 }
 
