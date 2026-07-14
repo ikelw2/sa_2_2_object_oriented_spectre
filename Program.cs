@@ -27,7 +27,7 @@ class Program
         AnsiConsole.MarkupLine($"{a} + {b} + {c:F3} = " + Maths.Add(a, b, Convert.ToDecimal(c)) + "   [Turquoise4]// demo of Add      (3 params decimals)[/] ");
         AnsiConsole.MarkupLine($"{a} + {b}         = " + Maths.Add(a, b) + "       [Turquoise4]// demo of Add      (2 params integers)[/] ");
         AnsiConsole.MarkupLine($"{a} * {b} * {c:F3} = " + Maths.Multiply(a, b, Convert.ToDecimal(c)) + "  [Turquoise4]// demo of Multiply (3 params decimals)[/] ");
-        AnsiConsole.MarkupLine($"{a} * {b}         = "   + Maths.Multiply(a, b)                        + "       [Turquoise4]// demo of Multiply (2 params decimals)[/] ");
+        AnsiConsole.MarkupLine($"{a} * {b}         = "   + Maths.Multiply(a, b)                        + "       [Turquoise4]// demo of Multiply (2 params integers)[/] ");
 
         // Assignment 2.2.3
         AnsiConsole.MarkupLine("\n[bold magenta]Assignment 2.2.3[/]");
